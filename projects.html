@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cory Rylander Portfolio</title>
+  <!-- CSS Sheet -->
+  <link href="styles.css" rel="stylesheet">
+  <!-- Custom Fonts - Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Navigation -->
+      <nav class="nav-menu">
+        <!-- Logo -->
+        <div class="menu-logo">
+          <a href="index.html" title="Cory Rylander">
+            <img src="images/init-logo.png" alt="Cory Rylander Logo" class="logo">
+          </a>
+        </div>
+        <!-- Nav Menu for Desktop -->
+        <ul class="nav-list" id="navi-list">
+          <li class="list-item"><a href="index.html">Home</a></li>
+          <li class="list-item"><a href="resume.html">Resume</a></li>
+          <li class="list-item current-link"><a href="projects.html">Portfolio</a></li>
+          <li class="list-item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Button for Mobile -->
+        <div class="menu" id="toggle-button">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content-container">
+    <div class="main">
+      <div class="projects">
+        <h1> CIST1510 - Web Development I</h1>
+        <img src="/images/web-design.jpg" alt="Webpage and Computer" height="250px" width="250px">
+        <h2>Fall - 2021</h2>
+        <table class="web-dev">
+          <tr>
+            <th>Module 3</th>
+            <td><a href="/projects/Module 3/index.html">Lab</a></td>
+            <td><a href="/projects/Module 3/Cory_Rylander_firstWebPage.html">Assignment</a></td>
+          </tr>
+          <tr>
+            <th>Module 4</th>
+            <td colspan="2"><a href="/projects/Module 4/index.html">Assignment</a></td>
+          </tr>
+          <tr>
+            <th>Module 5</th>
+            <td><a href="/projects/Module 5/index.html">Lab</a></td>
+            <td><a href="/projects/Module 5/fontStyles_coryRylander.html">Assignment</a></td>
+          </tr>
+          <tr>
+            <th>Module 6</th>
+            <td colspan="2"><a href="/projects/Module 6/index.html">Assignment</a></td>
+          </tr>
+          <tr>
+            <th>Module 7</th>
+            <td colspan="2"><a href="/projects/Module 7/index.html">Lab</a></td>
+          </tr>
+          <tr>
+            <th>Module 8</th>
+            <td colspan="2"><a href="/projects/Module 8/index.html">Lab</a></td>
+          </tr>
+          <tr>
+            <th>Module 9</th>
+            <td colspan="2"><a href="/projects/Module 9/image_coryRylander.html">Assignment</a></td>
+          </tr>
+          <tr>
+            <th>Module 10</th>
+            <td colspan="2"><a href="/projects/Module 10/luncheons.html">Lab</a></td>
+          </tr>
+          <tr>
+            <th>Module 11</th>
+            <td colspan="2"><a href="/projects/Module 11/form_coryRylander.html">Assignment</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <!-- Container for footer -->
+    <div class="footer-container">
+      <!-- Social media links in footer -->
+      <ul class="social-media">
+        <li>
+          <a href="www.linkedin.com/in/cory-rylander" title="Cory Rylander on LinkedIn" target="_blank">
+            <i class="fa fa-linkedin">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/CoryR87" title="@CoryR87 on twitter" target="_blank">
+            <i class="fa fa-twitter">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/CoryRylander" title="CoryRylander's Github" target="_blank">
+            <i class="fa fa-github-alt">
+            </i>
+          </a>
+        </li>
+
+      </ul>
+      <div class="copyright">
+        <p>Copyright &copy; Cory Rylander 2021</p>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript to toggle button for mobile -->
+  <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+      naviList.classList.toggle('active');
+    })
+  </script>
+</body>
+
+</html>

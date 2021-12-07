@@ -1,0 +1,7 @@
+body { /* This sets the style of everything in the <body> tag on the page.*/
+    background-color: azure; /* Sets the color of the background */
+    font-family: Arial, Verdana, sans-serif; /* This sets the font family, which is the the style the text appears in browser.*/
+}
+.shadow { /* This creates a class selector that can be called by any HTML element */
+    text-shadow:0 0 3px darkgreen; /* This adds a green shadow to the text.*/
+}

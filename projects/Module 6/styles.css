@@ -1,0 +1,33 @@
+body {
+  /* This sets the style of everything in the <body> tag on the page.*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* This sets the font family, which is the the style the text appears in browser.*/
+  font-size: 100%; /* This sets the size of the font on the page in percent*/
+  width: 90%; /* this sets the width of everything in the <body> tag compared to the size of the window*/
+  background-color: wheat;
+  margin: 15px auto; /* this sets the margin of the body to 15 pixels.*/
+  padding: 15px; /* the sets the padding of the content of the body*/
+  border: 1px solid blueviolet; /* this puts a solid border around the body*/
+}
+header {
+  background-color: cornsilk;
+  padding: 20px;
+  text-align: center;
+  color: crimson;
+  border-bottom: 2px solid blueviolet; /* this puts a solid border at the bottom of the header*/
+}
+
+main {
+  width: 66%; /* This sets the width of the <main> section to 66% of the window.*/ 
+  border-right: 2px solid blueviolet; /* this puts a solid border to the right of the <main> section*/
+  float: left; /* this floats the content of the main to the left*/
+  text-align: center;
+}
+aside {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+footer {
+  clear: both;
+  border-top: 2px solid blueviolet;
+}

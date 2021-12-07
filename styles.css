@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+h2 {
+  margin-bottom: 1.25em;
+}
+p {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+a:link {
+  color: #CC5500;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #CC5500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Start of Header */
+.site-header {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  font-weight: 800;
+  background-color: #222;
+}
+
+/* Container that sets left and right margin for header. */
+.header-container {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+/* Navigation Start */
+.nav-menu {
+  color: #fff;
+  display: flex;
+  /* turns navigation menu into flexbox */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.mav-menu a:focus {
+  color: #CC5500;
+  font-weight: 800;
+  cursor: pointer;
+  border-bottom: 2px solid #CC5500;
+} 
+
+.current-link a {
+  color: #CC5500;
+  border-bottom: 2px solid #CC5500;
+}
+
+/* hides mobile menu until triggered by screen size */
+.menu {
+  display: none;
+}
+
+/* Main Content Start */
+/* container for main content */
+.content-container {
+  background-color: #fff;
+  color: #444;
+  padding: 7vh 0;
+}
+
+/* sets dimensions of main content */
+.main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main h2 {
+  font-size: 1.8em;
+}
+
+/* Footer Start */
+.site-footer {
+  background-color: #222;
+  padding: 4vh 0;
+}
+
+.footer-container {
+  text-align: center;
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+
+/* social media buttons */
+.social-media {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* displays social media buttons horizontally */
+.social-media li {
+  display: inline-block;
+}
+
+/* creates rounded background of social media buttons */
+.social-media li a {
+  display: block;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  color:#222;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.social-media li a:hover,
+.social-media li a:focus {
+  background-color: #CC5500;
+  font-weight: 800;
+  cursor: pointer;
+} 
+
+.copyright {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+/* Resume page */
+
+.resume {
+  text-align: left;
+}
+
+.resume p {
+  margin-top: 0;
+}
+
+.resume ul {
+  padding-top: 0.5em;
+}
+.resume li {
+  margin-left: 1.25em;
+}
+
+/* Header for Resume */
+.resume-header {
+  text-align: center;
+  padding: 0.75em;
+  margin-bottom: 1em;
+}
+
+.resume-header h2 {
+  margin-bottom: 0;
+}
+
+
+.resume h3 {
+  border-bottom: 1px solid #CC5500;
+}
+
+/* sets margin-bottoms for resume items */
+.resume-objective, .strengths, .tech-summary, .education, .experience {
+  margin-bottom: 1em;
+}
+
+.resume-objective p {
+  margin-top: 0.25em;
+}
+
+/* removes bullet points from tech-skills list */
+.tech-summary .tech-skills {
+  list-style-type: none;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+}
+
+/* restores bullet points for sub-skills list */
+.tech-skills .sub-skills {
+  font-weight: normal;
+  list-style-type: disc;
+}
+
+.education p {
+  margin-top: 0.5em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* PROJECTS PAGE */
+.projects h1 {
+  margin-bottom: 1.25em;
+}
+
+.projects h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.web-dev {
+  font-size: 0.75em;
+  background-color: #222;
+  color: #CC5500;
+  border-spacing: 0.5em;
+  border-radius: 0.75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.web-dev, th, td {
+  border: 1px solid #fff;
+  /* border-collapse: collapse; */
+}
+
+.web-dev th, .web-dev td {
+  padding: 0.25em;
+}
+
+/* CONTACT PAGE */
+.contact img {
+  margin-bottom: 2em;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.form-container {
+  text-align: initial;
+  background-color: #f2f2f2;
+  border-radius: .25em;
+  padding: 1em;
+}
+
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #444;
+  border-radius: .2em;
+  margin-top: .3em;
+  margin-bottom: .75em;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #222;
+  color: #CC5500;
+  font-weight: 600;
+  padding: .55em 1em;
+  border: none;
+  border-radius: .2em;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #444;
+}
+
+/* Mobile Menu */
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+  /* Makes menu items align vertically */
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .menu-logo {
+    width: 100%;
+  }
+
+/* sets position of mobile menu buttons */
+  .menu {
+    display: block;
+    position: absolute;
+    right: 1.750em;
+    top: 1.825em;
+    font-size: 1.562em;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.625em;
+    display: none;
+  }
+
+  .nav-list .list-item {
+    display: block;
+  }
+
+/* activates Javascript */
+  .active {
+    display: block;
+  }
+}
+

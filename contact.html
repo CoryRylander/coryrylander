@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Cory Rylander Portfolio</title>
+  <!-- CSS Sheet -->
+  <link href="styles.css" rel="stylesheet">
+  <!-- Custom Fonts - Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Navigation -->
+      <nav class="nav-menu">
+        <!-- Logo -->
+        <div class="menu-logo">
+          <a href="index.html" title="Cory Rylander">
+            <img src="images/init-logo.png" alt="Cory Rylander Logo" class="logo">
+          </a>
+        </div>
+        <!-- Nav Menu for Desktop -->
+        <ul class="nav-list" id="navi-list">
+          <li class="list-item"><a href="index.html">Home</a></li>
+          <li class="list-item"><a href="resume.html">Resume</a></li>
+          <li class="list-item"><a href="projects.html">Portfolio</a></li>
+          <li class="list-item current-link"><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Button for Mobile -->
+        <div class="menu" id="toggle-button">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content-container">
+    <div class="main">
+      <div class="contact">
+        <img src="/images/contact-me-no-data-md.png" alt="Contact Icons">
+
+        <p>If you wish to get in touch with me, you can contact me either through social media, or with the form below.
+        </p>
+        <div class="form-container">
+          <form id="contact_Me" method="get">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="me@me.com">
+            <label for="subject">Subject:</label>
+            <textarea id="subject" name="subject"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <!-- Container for footer -->
+    <div class="footer-container">
+      <!-- Social media links in footer -->
+      <ul class="social-media">
+        <li>
+          <a href="www.linkedin.com/in/cory-rylander" title="Cory Rylander on LinkedIn" target="_blank">
+            <i class="fa fa-linkedin">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/CoryR87" title="@CoryR87 on twitter" target="_blank">
+            <i class="fa fa-twitter">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/CoryRylander" title="CoryRylander's Github" target="_blank">
+            <i class="fa fa-github-alt">
+            </i>
+          </a>
+        </li>
+
+      </ul>
+      <div class="copyright">
+        <p>Copyright &copy; Cory Rylander 2021</p>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript to toggle button for mobile -->
+  <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+      naviList.classList.toggle('active');
+    })
+  </script>
+</body>
+
+
+</html>

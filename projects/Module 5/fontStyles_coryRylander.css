@@ -1,0 +1,29 @@
+body {
+  /* This sets the style of everything in the <body> tag on the page.*/
+  font-family: Arial, Helvetica, sans-serif; /* This sets the font family, which is the the style the text appears in browser.*/
+  font-size: 16px; /* This sets the size of the font on the page in pixels*/
+  text-align: center; /* This centers the text on the page.*/
+}
+h1 {
+  font-family: fantasy;
+  font-variant: small-caps; /* this changes the letters to all uppercase, with the former lowercase being the same size.*/
+  font-size: 2.5em;
+  color: indigo; /* Changes the color of the text in the header.*/
+}
+p {
+  color: rgb(173, 119, 49);
+  text-indent: 2em; /* Indents first letter of the paragraph.*/
+  line-height: 2; /* sets the height of the lines in the paragraph.*/
+}
+.large { /* adds a class selecter which can be used by a specific HTML elements.*/
+  font-size: x-large;
+}
+.small {
+  font-size: x-small;
+}
+.letterspace {
+  letter-spacing: 1.5em; /* changes the spacing between each letter.*/
+}
+.wordspace {
+  word-spacing: 2.5em; /* changes the spacing between each word.*/
+}

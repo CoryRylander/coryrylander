@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--the lang attribute tells the browser what language to use, US specifies the country.-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales page for device. -->
+    <title>Cory Rylander's Likes</title>
+    <meta charset="UTF-8">
+    <!--meta tag is used for metadata of the HTML document. charset tells the browser which character encoding to use.-->
+    <link rel="stylesheet" href="/projects/Module 4/styles.css"> <!-- Link to the CSS style sheet for this page.-->
+    <style>
+        /* the <style> tag is used to add an internal style sheet*/
+        h1 {
+            color: #92aaaa;
+            /* changes the color of the font */
+            background-color: midnightblue;
+            /* changes the background color of just the header.*/
+        }
+
+        li {
+            color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cory Rylander's Likes</h1>
+    </header>
+    <main>
+        <p style="color:darkolivegreen;"> There are many things I like, but only a few things I love. One my favorite
+            things is video games.<br>
+            <!-- <p style> is an inline css style which only affects the tag it is used in. This changes the font to another type.<br> is a line break.-->
+            I love playing them for many different reasons:</p>
+        <ul>
+            <!-- This is the tag to start an unordered list.-->
+            <li>They are a good means of escape from stress. </li>
+            <li>I love exploring the worlds people have created.</li>
+            <li>Interacting with the characters, and learning about their backstory is fun.</li>
+            <li>I love new and interesting gameplay mechanics.</li>
+        </ul>
+
+        <p>My <em>favorite</em> video game series of all time is <span class="shadow">The Legend of Zelda.</span></p>
+        <!-- <em> is used to place emphasis on a word or phrase. <span> is used to color a part of the text.-->
+    </main>
+
+    <footer>
+        <address style="text-align: center;"><small>Cory Rylander<br>
+                <!--The address tag is used for contact information. "text-align: center;" centers the text on the page.-->
+                Contact: 123-456-7890<br>
+                <a href="mailto:CoryRylander@example.com">CoryRylander@example.com</a>
+            </small></address>
+    </footer>
+</body>
+
+</html>
